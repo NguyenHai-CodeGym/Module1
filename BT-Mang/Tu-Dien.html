@@ -50,10 +50,10 @@
     for (i = 0; i <= english.length; i++) {
       if (search.value == english[i]) {
         result.innerHTML = vietnamese[i];
-        break;
+        return;
       } else {
-        result.innerHTML = "Không tìm thấy dữ liệu";
       }
+      result.innerHTML = "Không tìm thấy dữ liệu";
     }
   }
 </script>
